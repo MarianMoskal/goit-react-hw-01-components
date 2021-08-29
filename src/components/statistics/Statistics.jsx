@@ -17,6 +17,10 @@ function Statistics({ stats, title }) {
   );
 }
 
+Statistics.defaultProps = {
+  title: "Upload Stats",
+};
+
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
