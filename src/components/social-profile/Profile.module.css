@@ -1,0 +1,50 @@
+.profile {
+  width: 300px;
+  max-height: 500px;
+  text-align: center;
+  background-color: lime;
+}
+
+.avatar {
+  width: 100px;
+  height: auto;
+  margin-top: 15px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.stats li {
+  list-style: none;
+  width: calc(100% / 3);
+  padding: 15px 0;
+  background-color: yellow;
+}
+
+.stats li:not(:last-child) {
+  border-right: solid black 1px;
+}
+
+.label {
+  display: block;
+}
+
+.quantity {
+  font-weight: bold;
+}
+
+.tag {
+  font-weight: 500;
+}
+
+.location {
+  font-weight: 500;
+}
