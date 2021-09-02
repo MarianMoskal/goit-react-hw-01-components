@@ -2,14 +2,12 @@ import PropTypes from "prop-types";
 import s from "./friendList.module.css";
 
 function FriendListItem({ avatar, name, isOnline }) {
+  const onLine = s.statusOnLine;
+  const ofLine = s.statusOfLine;
+
   return (
     <li className={s.item}>
-      {isOnline === true ? (
-        <span className={s.statusOnLine}></span>
-      ) : (
-        <span className={s.statusOfLine}></span>
-      )}
-
+      <span className={isOnline === true ? onLine : ofLine}></span>
       <img className={s.avatar} src={avatar} alt={name} width="48" />
       <p className={s.name}>{name}</p>
     </li>

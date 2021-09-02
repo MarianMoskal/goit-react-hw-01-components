@@ -1,7 +1,7 @@
 // import stats from './statistical-data.json';
 import PropTypes from "prop-types";
 import s from "./Statistics.module.css";
-import StatCard from "./StatCard";
+// import StatCard from "./StatCard";
 
 function Statistics({ stats, title }) {
   return (
@@ -10,7 +10,10 @@ function Statistics({ stats, title }) {
 
       <ul className={s.statList}>
         {stats.map(({ id, label, percentage }) => (
-          <StatCard key={id} label={label} percentage={percentage} />
+          <li key={id} className={s.item}>
+            <span className={s.label}>{label}</span>
+            <span className={s.percentage}>{percentage}%</span>
+          </li>
         ))}
       </ul>
     </section>
